@@ -31,10 +31,10 @@ public class Main {
             System.out.println("Вы угадали число! Поздравляем с выигрышем!");
             break;
             }
-            if (number>secretNumber){
+            else if (number>secretNumber){
             System.out.println("Введенное число больше загаданного. Попытайтесь угадать число снова");
             }
-            if (number<secretNumber){
+            else if (number<secretNumber){
             System.out.println("Введенное число меньше загаданного. Попытайтесь угадать число снова");
             }
             attempt++;
@@ -51,7 +51,7 @@ public class Main {
                 startGame(random, scanner);
                 break;
             }
-            if (answer.equals("n")) {
+            else if (answer.equals("n")) {
                 break;
             }
                 System.out.println("Повторить игру еще раз? y - да, n - нет");
